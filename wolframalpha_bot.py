@@ -3,7 +3,7 @@
 # This program is dedicated to the public domain under the CC0 license.
 
 import wolframalpha
-client = wolframalpha.Client('VH5ARJ-3LYP77G3TY')
+client = wolframalpha.Client(TOKEN)
 """
 First, a few handler functions are defined. Then, those functions are passed to
 the Dispatcher and registered at their respective places.
@@ -58,7 +58,7 @@ def main():
     # Create the Updater and pass it your bot's token.
     # Make sure to set use_context=True to use the new context based callbacks
     # Post version 12 this will no longer be necessary
-    updater = Updater("1296820162:AAFRFCyQGA5Fc4QlKtK6B3E1-nTlxhskHAw", use_context=True)
+    updater = Updater(TOKEN, use_context=True)
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
